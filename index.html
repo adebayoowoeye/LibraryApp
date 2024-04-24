@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Book Library</title>
+  </head>
+  <body>
+    <main class="main-wrapper">
+      <!-- Place flash message here -->
+      <section class="header">
+        <h1>Welcome to Book Library</h1>
+        <p>This is a library</p>
+        <p>These books are available for read and rent:</p>
+        <!-- Add Book to shelf -->
+        <ul class="book-shelf"></ul>
+      </section>
+      <section class="add-book">
+        <input
+          type="text"
+          id="add-title"
+          name="addTitle"
+          placeholder="Add title..."
+        />
+        <input
+          type="text"
+          id="add-author"
+          name="addAuthor"
+          placeholder="Add author..."
+        />
+        <input
+          type="number"
+          id="add-pages"
+          name="addPages"
+          placeholder="Number of pages..."
+        />
+        <div>
+          <label for="have-read">Book Already read</label>
+          <input type="checkbox" id="have-read" name="haveRead" />
+        </div>
+        <!-- Submit form -->
+        <input type="submit" value="Submit" class="submit-form" />
+      </section>
+      <div><button type="button" id="new-book-btn">Add New Book</button></div>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
